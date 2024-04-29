@@ -18,7 +18,7 @@ and the Flutter guide for
 
 ## Getting started
 
-You will need a way to scan the license itself. This package simply decrypts and parses
+You will need a way to scan the license itself. This package simply decrypts and parses the raw binary data.
 
 ## Usage
  Firstly, create a Uint8List from the raw data you got from scanning the PDF417 barcode.

@@ -22,6 +22,18 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.sadl_parsing
+        pluginClass: sadlParsing
+      ios:
+        pluginClass: sadlParsing
+      macos:
+        pluginClass: sadlParsing
+      web:
+        pluginClass: sadlParsing
+        fileName: sadl_parsing.dart
 
   # To add assets to your package, add an assets section, like this:
   # assets:
