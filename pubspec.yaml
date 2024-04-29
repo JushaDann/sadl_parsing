@@ -1,6 +1,7 @@
 name: sadl_parsing
 description: "Decrypt and parse the South African Driver's license raw data"
 version: 0.0.1
+homepage: https://github.com/JushaDann/sadl_parsing
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
