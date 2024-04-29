@@ -24,9 +24,11 @@ know whether this package might be useful for them.
 You will need a way to scan the license itself. This package simply decrypts and parses
 
 ## Usage
+ Firstly, create a Uint8List from the raw data you got from scanning the PDF417 barcode.
+ You can then call the tool to parse and decrypt the data
 
 try {
-        //Firstly, create a Uint8List from the raw data you got from scanning the PDF417 barcode.
+       
         final String iso = call.arguments;
         Uint8List data = Uint8List.fromList(iso.codeUnits);
 
@@ -39,6 +41,5 @@ try {
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Feel free to submit pull requests.
+Photo is not working, that is the last thing I need to figure out how to get working.
