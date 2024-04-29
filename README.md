@@ -25,7 +25,11 @@ You will need a way to scan the license itself. This package simply decrypts and
 
 ## Usage
  Firstly, create a Uint8List from the raw data you got from scanning the PDF417 barcode.
- You can then call the tool to parse and decrypt the data
+ You can then call the tool to parse and decrypt the data.
+
+ All data is kept in a class called DriversLicense.
+
+DrivingLicense? drivingLicense;
 
 try {
        
@@ -34,7 +38,10 @@ try {
 
 
         final licenseInfoDecrypted = const SadlTool().decryptData(data);
-        final licenseInfo = const SadlTool().parseData(licenseInfoDecrypted);        
+        final licenseInfo = const SadlTool().parseData(licenseInfoDecrypted); 
+        drivingLicense = licenseInfo;       
+        print(drivingLicense.birthdate);
+
           } catch (e) {
             print('parsing or decryption failed');
             }
